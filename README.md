@@ -1,5 +1,5 @@
 # StatusBarIcons
-Lets Volt Out - Status Bar Icons
+Lets Volt Out - Status Bar Icons (Gingerbread)
 
 Codes are from StatusbarPolicy on SystemUI.apk
 
