@@ -17,10 +17,10 @@ public class BatteryIcon extends ImageView {
         public void onReceive(Context context, Intent intent) {
             boolean isCharging = false;
             int level = intent.getIntExtra("level", 0);
-            int isCharging = intent.getIntExtra("status", 0);
+            int status = intent.getIntExtra("status", 0);
             setImageLevel(level);
-            if (isCharing == BatteryManager.BATTERY_STATUS_CHARGING || 
-                isCharging == Battery.Manager.BATTERY_STATUS_FULL)
+            if (status == BatteryManager.BATTERY_STATUS_CHARGING || 
+                status == BatteryManager.BATTERY_STATUS_FULL)
                 isCharging = true;
             if (isCharging) {
                 setImageLevel(level);
